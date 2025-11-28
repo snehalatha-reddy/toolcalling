@@ -617,6 +617,12 @@ def health():
     """Health check endpoint."""
     return jsonify({'status': 'healthy'})
 
+@app.route('/api/history', methods=['GET'])
+def get_history():
+    global chat_history
+    return jsonify({
+        "history": [msg.content for msg in chat_history]
+    })
 
 # ============================================================================
 # MAIN ENTRY POINT
@@ -628,4 +634,5 @@ if __name__ == '__main__':
         print("WARNING: OPENAI_API_KEY not found in environment variables.")
         print("Please create a .env file with: OPENAI_API_KEY=your_key_here")
     
+
     app.run(debug=True, port=5000)
