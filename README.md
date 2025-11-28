@@ -14,12 +14,19 @@ The app also stores **chat history**, checks **internet connectivity**, and vali
 ## 🚀 **Features**
 
 ✔ AI Chat System using OpenAI
+
 ✔ LangChain Tools for smart routing
+
 ✔ Conversation memory
+
 ✔ Automatic selection of correct tool
+
 ✔ Flask backend with multiple API endpoints
+
 ✔ Postman support
+
 ✔ Safety tool for crisis messages
+
 ✔ Fully contained in one Python file
 
 
